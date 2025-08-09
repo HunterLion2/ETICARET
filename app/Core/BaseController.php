@@ -14,9 +14,11 @@ class BaseController
     protected $userId;
 
     /**
+
      * BaseController constructor.
      * Oturum başlatma ve oturum süresi ayarlama
-     */
+
+    **/
     public function __construct()
     {
         // Oturum başlatma ve oturum süresi ayarlama
@@ -33,19 +35,20 @@ class BaseController
         $this->categories = $categoryModel->getActiveCategories();
 
         // Sepetteki ürün sayısını al
-        if (isset($_SESSION['user_id'])) {
-            $this->userId = $_SESSION['user_id'];
-            $cartModel = new CartModel();
-            $this->cartItemCount = $cartModel->getCartItemCountByUserId($this->userId);
-        }
- 
+        // if (isset($_SESSION['user_id'])) {
+        //     $this->userId = $_SESSION['user_id'];
+        //     $cartModel = new CartModel();
+        //     $this->cartItemCount = $cartModel->getCartItemCountByUserId($this->userId);
+        // }
         // checkLogin metodunu renderAdmin içinde çağıracağız
     }
 
-
     /**
-     * Kullanıcı giriş kontrolü
-     */
+
+    * Kullanıcı giriş kontrolü
+
+    **/
+
     private function checkLogin()
     {
         if (!isset($_SESSION['user_id'])) {
