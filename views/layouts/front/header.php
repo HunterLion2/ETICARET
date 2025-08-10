@@ -14,9 +14,11 @@
     <div class="bg-secondary text-white text-center py-2">
         <a href="/admin" class="text-white" style="font-size: 0.8em; font-weight: bold;">Yönetim Paneli için Tıklayın</a>
     </div>
+    
     <div class="text-center" id="loading">
         <p><b>Edukey ETicaretV5 Eğitim Sürümü</b><br>Yükleniyor Lütfen Bekleyin...</p>
     </div>
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
 
@@ -103,4 +105,5 @@
             </div>
         </div>
     </nav>
+
     <!-- Header Finish -->
