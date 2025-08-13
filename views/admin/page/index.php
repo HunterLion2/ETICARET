@@ -3,7 +3,7 @@
         <main class="col-md-12">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2 py-0 px-3">Sayfa Yönetimi</h1>
-                <a href="/admin/pages/create" class="btn btn-outline-secondary">Yeni Ekle</a>
+                <a href="/admin/page/create" class="btn btn-outline-secondary">Yeni Ekle</a>
             </div>
             <div class="container my-2">
                 <div class="col-md-12">
@@ -37,10 +37,10 @@
                                         </td>
                                         <td class="text-center align-middle"><?= htmlspecialchars($page['status']) ?></td>
                                         <td class="text-center align-middle">
-                                            <a href="/admin/pages/edit/<?= htmlspecialchars($page['id']) ?>" class="btn btn-secondary btn-sm">
+                                            <a href="/admin/page/edit/<?= htmlspecialchars($page['id']) ?>" class="btn btn-secondary btn-sm">
                                                 <i class="fas fa-edit"></i>
                                             </a>
-                                            <a href="/admin/pages/delete/<?= htmlspecialchars($page['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Bu kaydı silmek istediğinize emin misiniz?');">
+                                            <a href="/admin/page/delete/<?= htmlspecialchars($page['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Bu kaydı silmek istediğinize emin misiniz?');">
                                                 <i class="fas fa-trash-alt"></i>
                                             </a>
                                         </td>
