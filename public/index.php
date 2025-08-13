@@ -107,12 +107,12 @@ Route::add('admin/orders/detail/([0-9]+)', 'Admin\OrderController@detail');
 Route::add('admin/orders/updateStatus/([0-9]+)', 'Admin\OrderController@updateStatus'); // Yeni route
 
 // Page Route Yapısı
-Route::add('admin/pages', 'Admin\PageController@index');
-Route::add('admin/pages/create', 'Admin\PageController@create');
-Route::add('admin/pages/store', 'Admin\PageController@store');
-Route::add('admin/pages/edit/([0-9]+)', 'Admin\PageController@edit');
-Route::add('admin/pages/update/([0-9]+)', 'Admin\PageController@update');
-Route::add('admin/pages/delete/([0-9]+)', 'Admin\PageController@delete');
+Route::add('admin/page', 'Admin\PageController@index');
+Route::add('admin/page/create', 'Admin\PageController@create');
+Route::add('admin/page/store', 'Admin\PageController@store');
+Route::add('admin/page/edit/([0-9]+)', 'Admin\PageController@edit');
+Route::add('admin/page/update/([0-9]+)', 'Admin\PageController@update');
+Route::add('admin/page/delete/([0-9]+)', 'Admin\PageController@delete');
 
 $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 if ($uri === '') {

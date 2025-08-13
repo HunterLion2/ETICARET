@@ -49,7 +49,7 @@
                                 <a class="dropdown-item text-decoration-none" href="/admin/about"><i class="fas fa-building"></i> Kurumsal</a>
                             </li>
                             <li>
-                                <a class="dropdown-item text-decoration-none" href="/admin/pages"><i class="fas fa-file-alt"></i> Sayfalar</a>
+                                <a class="dropdown-item text-decoration-none" href="/admin/page"><i class="fas fa-file-alt"></i> Sayfalar</a>
                             </li>
                         </ul>
                     </li>
